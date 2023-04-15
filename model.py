@@ -11,7 +11,7 @@ from sklearn.impute import SimpleImputer
 
 
 def get_data():
-    df = pd.read_csv('Crop_recommendation.csv')
+    df = pd.read_csv('./Crop_recommendation.csv')
     return df[['N', 'P', 'K', 'ph', 'label']]
 
 
