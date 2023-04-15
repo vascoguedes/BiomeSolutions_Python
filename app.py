@@ -16,7 +16,7 @@ def predict():
     best_vals = pred_best_vals(input_data['culture'])
     
     # Return the output data as the response
-    return jsonify(best_vals.tolist())
+    return jsonify([output_data, best_vals.tolist()])
 
 if __name__ == '__main__':
     # Start the Flask app
