@@ -3,6 +3,7 @@ from model import get_products_needed
 from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, origins="*")
 
 @app.route('/', methods=['POST'])
 def predict():
