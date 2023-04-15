@@ -14,11 +14,9 @@ def predict():
     output_data = get_products_needed([input_data['N'], input_data['P'], input_data['K']], input_data['culture'], input_data['area'])
 
     best_vals = pred_best_vals(input_data['culture'])
-
-    output_data.append(best_vals)
     
     # Return the output data as the response
-    return jsonify(output_data)
+    return jsonify(best_vals)
 
 if __name__ == '__main__':
     # Start the Flask app
