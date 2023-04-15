@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from model import get_products_needed
 
 app = Flask(__name__)
-CORS(app, origins="*")
 
 @app.route('/', methods=['POST'])
 def predict():
