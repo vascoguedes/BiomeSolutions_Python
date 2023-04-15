@@ -96,7 +96,6 @@ def get_products_needed(client_vals, culture, area):
             sugestions += [("Kiplant iNmass", quantity, "L",
                             "https://www.asfertglobal.com/produtos/kiplant-inmass-pt/")]
     
-    print(sugestions)
     return sugestions
 
 
